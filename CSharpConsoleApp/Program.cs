@@ -21,8 +21,11 @@ namespace CSharpConsoleApp
             structureToAllowNonStaticAccessToStaticField.whichVersion = 2;
             
             //manually formated output
-            Console.WriteLine("Hello. "+  title + " "+ structureToAllowNonStaticAccessToStaticField.whichVersion); //output of static variable
-           
+            Console.WriteLine("Hello. "+  title + " Version: "+ structureToAllowNonStaticAccessToStaticField.whichVersion + "!"); //output of static variable
+
+            //composite format string output
+            Console.WriteLine(string.Format("Hello. {0} Version: {1}!", title, structureToAllowNonStaticAccessToStaticField.whichVersion));
+
              
             Console.WriteLine("Press Enter to continue");
 
