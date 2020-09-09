@@ -32,5 +32,17 @@ namespace SchoolLibrary
             }
 
         }
+
+        public School()
+        {
+            Name = "Untitled School";
+            PhoneNumber = "555-1234";
+        }
+
+        public School(string SchoolName, string SchoolPhoneNumber)
+        {
+            Name = SchoolName;
+            PhoneNumber = SchoolPhoneNumber;
+        }
     }
 }
