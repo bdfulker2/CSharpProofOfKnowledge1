@@ -44,5 +44,35 @@ namespace SchoolLibrary
             Name = SchoolName;
             PhoneNumber = SchoolPhoneNumber;
         }
+
+
+        /// <summary>
+        /// Function bodied express representing below logic
+        ///     public float AverageThreeScores(float a, float b, float c)
+        ///     {
+        ///         var result = (a + b + c) / 3;
+        ///         return result;
+        ///     }
+        /// </summary>
+        /// <param name="a">value 1 of average</param>
+        /// <param name="b">value 2 of average</param>
+        /// <param name="c">value 3 of average</param>
+        /// <returns>returns float value of the a, b, and c parameters/arguments</returns>
+        public float AverageThreeScores(float a, float b, float c) => (a + b + c) / 3;
+
+        /// <summary>
+        /// Function bodied Expression representing below logic
+        ///     public int AverageThreeScores(int a, int b, int c)
+        ///     {
+        ///         var result = (a + b + c) / 3;
+        ///         return result;
+        ///     }
+        /// </summary>
+        /// <param name="a"></param>
+        /// <param name="b"></param>
+        /// <param name="c"></param>
+        /// <returns>returns integer average of the a, b, and c parameters/arguments</returns>
+        public int AverageThreeScores(int a, int b, int c) => (a + b + c) / 3;
+        
     }
 }
