@@ -17,5 +17,15 @@ namespace SchoolLibrary
         {
             return 4.0f;
         }
+        public override string SendMessage(string message)
+        {
+            var sb = new StringBuilder(base.SendMessage(message));
+            sb.AppendLine("Disclaimer: Due to Florida' broad open records law, most written " +
+                "communications to or from College employees are public record, available to the" +
+                " public and the media upon request. Therefore, this email communication may be " +
+                "subject to public disclosure."
+            );
+            return sb.ToString();
+        }
     }
 }
