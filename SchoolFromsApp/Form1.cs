@@ -45,7 +45,13 @@ namespace SchoolFromsApp
         private void TeacherGaButton_Click(object sender, EventArgs e)
         {
             var teacher = new Teacher();
-            MessageBox.Show("The grade average = ", teacher.ComputeGradeAverage().ToString());
+            MessageBox.Show("The teacher grade average = " + teacher.ComputeGradeAverage().ToString());
+        }
+
+        private void StudentGpaButton_Click(object sender, EventArgs e)
+        {
+            var student = new Student();
+            MessageBox.Show("The student grade average = " + student.ComputeGradeAverage().ToString());
         }
     }
 }

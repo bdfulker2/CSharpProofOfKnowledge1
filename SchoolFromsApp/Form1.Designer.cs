@@ -177,6 +177,7 @@
             this.studentGpaButton.TabIndex = 9;
             this.studentGpaButton.Text = "Test Student GA";
             this.studentGpaButton.UseVisualStyleBackColor = true;
+            this.studentGpaButton.Click += new System.EventHandler(this.StudentGpaButton_Click);
             // 
             // teacherGaButton
             // 
