@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SchoolLibrary;
 
 namespace SchoolFromsApp
 {
@@ -17,9 +18,9 @@ namespace SchoolFromsApp
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void submitButton_Click(object sender, EventArgs e)
         {
-
+            var testSchool = new School();
         }
     }
 }
