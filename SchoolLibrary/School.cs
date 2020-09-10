@@ -6,15 +6,42 @@ namespace SchoolLibrary
 {
     public class School
     {
+        /// <summary>
+        /// Property for accessing Name
+        /// </summary>
         public string Name { get; set; }
+
+        /// <summary>
+        /// Property for accessing Address
+        /// </summary>
         public string Address { get; set; }
+
+        /// <summary>
+        /// Property for Accessing City
+        /// </summary>
         public string City { get; set; }
+
+        /// <summary>
+        /// Property for accessing State
+        /// </summary>
         public string State { get; set; }
+
+        /// <summary>
+        /// Property for accessing Zip
+        /// </summary>
         public string Zip { get; set; }
+
+        /// <summary>
+        /// Property for accessing PhoneNumber
+        /// </summary>
         public string PhoneNumber { get; set; }
 
         //backing variable for TwitterAddress Property
         private string _twitterAddress;
+        
+        /// <summary>
+        /// Non automatic Property for accessing TwitterAddress
+        /// </summary>
         public string TwitterAddress
         {
             //make sure address starts with @ symbol

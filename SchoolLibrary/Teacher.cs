@@ -10,8 +10,15 @@ namespace SchoolLibrary
     /// </summary>
     public class Teacher : Person
     {
+        /// <summary>
+        /// Property for accessing Subject
+        /// </summary>
         public string Subject { get; set; }
 
+        /// <summary>
+        /// Overridden method for calculating grade average.
+        /// </summary>
+        /// <returns></returns>
         public override float ComputeGradeAverage()
         {
             //TODO: fix implementation later
