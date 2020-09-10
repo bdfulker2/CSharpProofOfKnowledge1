@@ -18,7 +18,7 @@ namespace SchoolLibrary
         public string TwitterAddress
         {
             //make sure address starts with @ symbol
-            get { return _twitterAddress; };
+            get { return _twitterAddress; }
             set
             {
                 if (value.StartsWith("@"))
