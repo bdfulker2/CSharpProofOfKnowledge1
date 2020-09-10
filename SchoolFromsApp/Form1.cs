@@ -29,6 +29,7 @@ namespace SchoolFromsApp
                 Zip = zipTextBox.Text,
                 PhoneNumber = phoneTextBox.Text
             };
+
             try
             {
                 school.TwitterAddress = twitterTextBox.Text;

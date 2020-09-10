@@ -12,6 +12,5 @@ namespace SchoolLibrary
     {
         public enum GradeLevels { Freshman, Sophmore, Junior, Senior }
         public GradeLevels GradLevels { get; set; }
-
     }
 }
