@@ -27,7 +27,15 @@ namespace SchoolFromsApp
             testSchool.State = stateTextBox.Text;
             testSchool.Zip = zipTextBox.Text;
             testSchool.PhoneNumber = phoneTextBox.Text;
-            testSchool.TwitterAddress = twitterTextBox.Text;
+            
+            try
+            {
+                testSchool.TwitterAddress = twitterTextBox.Text;
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
