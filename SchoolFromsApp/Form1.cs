@@ -41,5 +41,11 @@ namespace SchoolFromsApp
 
             MessageBox.Show(school.ToString());
         }
+
+        private void TeacherGaButton_Click(object sender, EventArgs e)
+        {
+            var teacher = new Teacher();
+            MessageBox.Show("The grade average = ", teacher.ComputeGradeAverage().ToString());
+        }
     }
 }

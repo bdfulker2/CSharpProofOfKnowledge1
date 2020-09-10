@@ -43,6 +43,8 @@
             this.phoneTextBox = new System.Windows.Forms.TextBox();
             this.twitterTextBox = new System.Windows.Forms.TextBox();
             this.submitButton = new System.Windows.Forms.Button();
+            this.studentGpaButton = new System.Windows.Forms.Button();
+            this.teacherGaButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -159,7 +161,7 @@
             // 
             // submitButton
             // 
-            this.submitButton.Location = new System.Drawing.Point(232, 383);
+            this.submitButton.Location = new System.Drawing.Point(232, 369);
             this.submitButton.Name = "submitButton";
             this.submitButton.Size = new System.Drawing.Size(100, 23);
             this.submitButton.TabIndex = 8;
@@ -167,11 +169,32 @@
             this.submitButton.UseVisualStyleBackColor = true;
             this.submitButton.Click += new System.EventHandler(this.SubmitButton_Click);
             // 
+            // studentGpaButton
+            // 
+            this.studentGpaButton.Location = new System.Drawing.Point(232, 398);
+            this.studentGpaButton.Name = "studentGpaButton";
+            this.studentGpaButton.Size = new System.Drawing.Size(100, 23);
+            this.studentGpaButton.TabIndex = 9;
+            this.studentGpaButton.Text = "Test Student GA";
+            this.studentGpaButton.UseVisualStyleBackColor = true;
+            // 
+            // teacherGaButton
+            // 
+            this.teacherGaButton.Location = new System.Drawing.Point(232, 427);
+            this.teacherGaButton.Name = "teacherGaButton";
+            this.teacherGaButton.Size = new System.Drawing.Size(100, 23);
+            this.teacherGaButton.TabIndex = 10;
+            this.teacherGaButton.Text = "Test Teacher GA";
+            this.teacherGaButton.UseVisualStyleBackColor = true;
+            this.teacherGaButton.Click += new System.EventHandler(this.TeacherGaButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(553, 474);
+            this.Controls.Add(this.teacherGaButton);
+            this.Controls.Add(this.studentGpaButton);
             this.Controls.Add(this.submitButton);
             this.Controls.Add(this.twitterTextBox);
             this.Controls.Add(this.phoneTextBox);
@@ -211,6 +234,8 @@
         private System.Windows.Forms.TextBox phoneTextBox;
         private System.Windows.Forms.TextBox twitterTextBox;
         private System.Windows.Forms.Button submitButton;
+        private System.Windows.Forms.Button studentGpaButton;
+        private System.Windows.Forms.Button teacherGaButton;
     }
 }
 
