@@ -19,7 +19,9 @@ namespace SchoolLibrary
             var sb = new StringBuilder();
             var timeStamp = string.Format("Sent on {0:D} at {0:t}", DateTime.Now);
             sb.AppendLine(timeStamp);
-            sb.AppendLine("Dear " + FirstName + ",");
+            sb.Append("Dear ")
+              .Append(FirstName)
+              .AppendLine(",");
             sb.AppendLine(message);
             return sb.ToString();
         }
