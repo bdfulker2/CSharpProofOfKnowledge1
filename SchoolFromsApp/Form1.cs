@@ -36,6 +36,8 @@ namespace SchoolFromsApp
             {
                 MessageBox.Show(ex.Message);
             }
+
+            MessageBox.Show(testSchool.ToString());
         }
     }
 }
