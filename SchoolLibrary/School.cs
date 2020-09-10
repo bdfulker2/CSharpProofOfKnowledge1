@@ -38,7 +38,7 @@ namespace SchoolLibrary
 
         //backing variable for TwitterAddress Property
         private string _twitterAddress;
-        
+
         /// <summary>
         /// Non automatic Property for accessing TwitterAddress
         /// </summary>
