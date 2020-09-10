@@ -21,6 +21,13 @@ namespace SchoolFromsApp
         private void submitButton_Click(object sender, EventArgs e)
         {
             var testSchool = new School();
+            testSchool.Name = nameTextBox.Text;
+            testSchool.Address = addressTextBox.Text;
+            testSchool.City = cityTextBox.Text;
+            testSchool.State = stateTextBox.Text;
+            testSchool.Zip = zipTextBox.Text;
+            testSchool.PhoneNumber = phoneTextBox.Text;
+            testSchool.TwitterAddress = twitterTextBox.Text;
         }
     }
 }
