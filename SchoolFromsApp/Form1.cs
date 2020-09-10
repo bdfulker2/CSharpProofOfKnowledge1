@@ -18,26 +18,27 @@ namespace SchoolFromsApp
             InitializeComponent();
         }
 
-        private void submitButton_Click(object sender, EventArgs e)
+        private void SubmitButton_Click(object sender, EventArgs e)
         {
-            var testSchool = new School();
-            testSchool.Name = nameTextBox.Text;
-            testSchool.Address = addressTextBox.Text;
-            testSchool.City = cityTextBox.Text;
-            testSchool.State = stateTextBox.Text;
-            testSchool.Zip = zipTextBox.Text;
-            testSchool.PhoneNumber = phoneTextBox.Text;
-            
+            var school = new School
+            {
+                Name = nameTextBox.Text,
+                Address = addressTextBox.Text,
+                City = cityTextBox.Text,
+                State = stateTextBox.Text,
+                Zip = zipTextBox.Text,
+                PhoneNumber = phoneTextBox.Text
+            };
             try
             {
-                testSchool.TwitterAddress = twitterTextBox.Text;
+                school.TwitterAddress = twitterTextBox.Text;
             }
             catch(Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
 
-            MessageBox.Show(testSchool.ToString());
+            MessageBox.Show(school.ToString());
         }
     }
 }

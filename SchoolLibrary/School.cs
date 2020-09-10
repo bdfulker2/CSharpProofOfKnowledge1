@@ -30,7 +30,6 @@ namespace SchoolLibrary
                     throw new Exception("The twitter address must begin with @.");
                 }
             }
-
         }
 
         public School()
@@ -44,7 +43,6 @@ namespace SchoolLibrary
             Name = SchoolName;
             PhoneNumber = SchoolPhoneNumber;
         }
-
 
         /// <summary>
         /// Function bodied express representing below logic
@@ -74,7 +72,6 @@ namespace SchoolLibrary
         /// <returns>returns integer average of the a, b, and c parameters/arguments</returns>
         public static int AverageThreeScores(int a, int b, int c) => (a + b + c) / 3;
 
-
         public override string ToString()
         {
             var sb = new StringBuilder();
@@ -85,8 +82,7 @@ namespace SchoolLibrary
             sb.Append(State);
             sb.Append("  ");
             sb.Append(Zip);
-
             return sb.ToString();
-        }      
+        }
     }
 }
