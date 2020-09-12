@@ -59,16 +59,39 @@ namespace SchoolLibrary
             }
         }
 
+        /// <summary>
+        /// Constructor with no parameters
+        /// </summary>
         public School()
         {
             Name = "Untitled School";
+            Address = "1234 fake address";
+            City = "Fake City";
+            State = "FL";
+            Zip = "55555";
+            TwitterAddress = "@faketwitteraddress";
             PhoneNumber = "555-1234";
         }
 
-        public School(string SchoolName, string SchoolPhoneNumber)
+        /// <summary>
+        /// Constructor with parameters to pass in all properties associated with a school
+        /// </summary>
+        /// <param name="schoolName">used to set Name property</param>
+        /// <param name="schoolAddress">used to set Address property</param>
+        /// <param name="schoolCity">used to set City property</param>
+        /// <param name="schoolState">used to set State property</param>
+        /// <param name="schoolZip">used to set Zip property</param>
+        /// <param name="schoolTwitterAddress">used to set TwitterAddress</param>
+        /// <param name="schoolPhoneNumber">used to set PhoneNumber property</param>
+        public School(string schoolName, string schoolAddress, string schoolCity, string schoolState, string schoolZip, string schoolTwitterAddress, string schoolPhoneNumber)
         {
-            Name = SchoolName;
-            PhoneNumber = SchoolPhoneNumber;
+            Name = schoolName;
+            Address = schoolAddress;
+            City = schoolCity;
+            State = schoolState;
+            Zip = schoolZip;
+            TwitterAddress = schoolTwitterAddress;
+            PhoneNumber = schoolPhoneNumber;
         }
 
         /// <summary>
