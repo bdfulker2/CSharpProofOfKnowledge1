@@ -7,7 +7,7 @@ namespace SchoolLibrary
     /// <summary>
     /// Class for assignment type Science Experiment
     /// </summary>
-    public class ScienceExperiment
+    public class ScienceExperiment : IScored
     {
         /// <summary>
         /// Property for accessing Hypothesis
@@ -25,5 +25,7 @@ namespace SchoolLibrary
         /// Property for accessing Conclusion
         /// </summary>
         public string Conclusion { get; set; }
+        public float score { get; set; }
+        public float MaximumScore { get; set; }
     }
 }
