@@ -42,6 +42,8 @@ namespace SchoolLibrary
         public virtual string SendMessage(string message)
         {
             var sb = new StringBuilder();
+            //Formatted string {0:D} formats Date string in long format. 
+            //{0:t} where the lowercase t formats to show time without seconds or in short format.
             var timeStamp = string.Format("Sent on {0:D} at {0:t}", DateTime.Now);
             sb.AppendLine(timeStamp);
             sb.Append("Dear ")
