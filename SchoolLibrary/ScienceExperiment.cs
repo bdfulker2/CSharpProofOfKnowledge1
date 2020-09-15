@@ -25,7 +25,7 @@ namespace SchoolLibrary
         /// Property for accessing Conclusion
         /// </summary>
         public string Conclusion { get; set; }
-        public float score { get; set; }
+        public float Score { get; set; }
         public float MaximumScore { get; set; }
     }
 }

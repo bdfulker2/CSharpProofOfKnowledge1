@@ -23,5 +23,14 @@ namespace SchoolLibrary
         /// Property for accessing the text of the paper
         /// </summary>
         public string PaperText { get; set; }
+
+        /// <summary>
+        /// Function bodied expression for making readonly WordCount
+        ///     public int WordCount
+        ///     {
+        ///         get { return PaperText.WordCount(); }
+        ///     }
+        /// </summary>
+        public int WordCount => PaperText.WordCount();
     }
 }
