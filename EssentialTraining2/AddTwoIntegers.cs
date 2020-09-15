@@ -2,7 +2,7 @@
 
 namespace EssentialTraining2
 {
-    public class Class1
+    public class AddTwoIntegers
     {
         public int AddTwo(int a, int b)
         {
