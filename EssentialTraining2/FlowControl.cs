@@ -9,6 +9,26 @@ namespace EssentialTraining2
     /// </summary>
     public class FlowControl
     {
+        public string PrimaryOrSecondary(string color)
+        {
+            var result = "";
+            if (string.Equals(color, "red", StringComparison.OrdinalIgnoreCase))
+            {
+                result = "Primary";
+            }
+            else if (string.Equals(color, "blue", StringComparison.OrdinalIgnoreCase))
+            {
+                result = "Primary";
+            }
+            else if (string.Equals(color, "Yellow", StringComparison.OrdinalIgnoreCase))
+            {
+                result = "Primary";
+            }else
+            {
+                result = "Secondary";
+            }
+            return result;
+        }
         /// <summary>
         /// Flow Control using string.Equals for a string comparison
         /// </summary>
