@@ -16,6 +16,7 @@ namespace EssentialTraining2Tests
             Assert.AreEqual(4, testSimpleArrayInstance.GroceryList.Length);
             Assert.AreEqual("Milk", testSimpleArrayInstance.GroceryList[1]);
         }
+
         [TestMethod]
         public void TestToString()
         {
