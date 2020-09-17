@@ -22,7 +22,7 @@ namespace EssentialTraining2Tests
         public void TestToString()
         {
             var testSimpleArrayInstance = new SimpleArray();
-            Assert.IsTrue(testSimpleArrayInstance.ToString().StartsWith("There are"));
+            Assert.AreEqual("There are 4 and they are Bread, Milk, Eggs, Cheese.", testSimpleArrayInstance.ToString(),);
         }
     }
 }

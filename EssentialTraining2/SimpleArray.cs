@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 
@@ -16,11 +17,16 @@ namespace EssentialTraining2
 
         public override string ToString()
         {
+            StringBuilder groceries = new StringBuilder();
             for(int i = 0; i < GroceryList.Length; i++)
             {
-                
+                groceries.Append(GroceryList[i]);
+                if(i < GroceryList.Length-1)
+                {
+                    groceries.Append(", ");
+                }
             }
-            return "There are " + GroceryList.Length + "and they are " + GroceryList.ToString();
+            return "There are " + GroceryList.Length + " and they are " + groceries + ".";
         }
     }
 }
