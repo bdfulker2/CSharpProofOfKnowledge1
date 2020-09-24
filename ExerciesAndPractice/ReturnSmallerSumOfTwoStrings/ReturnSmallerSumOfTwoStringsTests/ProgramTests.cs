@@ -1,12 +1,13 @@
 using NUnit.Framework;
-using System;
-using Program;
+//using System;
+using ReturnSmallerSumOfTwoStrings;
+using System.Diagnostics;
 //using Xunit;
 
 namespace ReturnSmallerSumOfTwoStringsTests
 {
     [TestFixture]
-    public class ProgramTests
+    public static class ProgramTests
     {
         [Test]
         [TestCase("21", "44", ExpectedResult = "21")]
@@ -15,7 +16,7 @@ namespace ReturnSmallerSumOfTwoStringsTests
         [TestCase("100", "23", ExpectedResult = "23")]
         [TestCase("1500", "1", ExpectedResult = "1")]
         [TestCase("5", "5", ExpectedResult = "5")]
-        public void SmallerNumTest(string n1, string n2)
+        public static string SmallerNumTest(string n1, string n2)
         {
             return Program.SmallerNum(n1, n2);
         }
