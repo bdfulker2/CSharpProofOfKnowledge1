@@ -2,11 +2,15 @@
 
 namespace ReturnSmallerSumOfTwoStrings
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            
+        }
+        public static string SmallerNum(string n1, string n2)
+        {
+        
         }
     }
 }
