@@ -9,7 +9,12 @@ namespace ArrayOfMultiples
     {
         public int[] ArrayOfMulitples(int num, int length)
         {
-            return new int[] { };
+            int[] multiple = new int[length];
+            for(int i = 0; i < length; i++)
+            {
+                multiple[i] = (i + 1) * num;
+            }
+            return multiple;
         }
     }
 }
