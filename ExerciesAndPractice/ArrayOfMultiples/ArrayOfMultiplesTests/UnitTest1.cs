@@ -1,5 +1,7 @@
 using System;
 using NUnit.Framework;
+using ArrayOfMultiples;
+
 
 namespace ArrayOfMultiplesTests
 {
