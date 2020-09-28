@@ -1,14 +1,13 @@
 using System;
 using NUnit.Framework;
 using ArrayOfMultiples;
-
+using System.Collections.Generic;
 
 namespace ArrayOfMultiplesTests
 {
     [TestFixture]
     public class ArrayOfMultiplesTests
     {
-       
         [Test]
         [TestCase(7,5, ExpectedResult = new int[] { 7, 14, 21, 28, 35})]
         [TestCase(12, 10, ExpectedResult = new int[] { 12, 24, 36, 48, 60, 72, 84, 96, 108, 120 })]

@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace ArrayOfMultiples
+﻿namespace ArrayOfMultiples
 {
     /// <summary>
     /// Create a function that takes two numbers as arguments (num, length) and returns an array of multiples of num up to length.
