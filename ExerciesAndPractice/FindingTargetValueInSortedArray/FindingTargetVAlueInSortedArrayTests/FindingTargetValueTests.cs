@@ -12,7 +12,7 @@ namespace FindingTargetVAlueInSortedArrayTests
         public bool FindTargetValueInArrayTest(int target, int[] arrayOfValues)
         {
             FindingTargetValue targetValue = new FindingTargetValue();
-            return targetValue.FindTargetValueInArray(target, arrayOfValues)
+            return targetValue.FindTargetValueInArray(target, arrayOfValues);
         }
     }
 }
