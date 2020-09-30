@@ -29,7 +29,7 @@ namespace FindingTargetValueInSortedArray
         public bool OptimizedFindTargetValueInArray(int target, int[] arrayOfValues)
         {
             int i = 0;
-            int j = arrayOfValues.Length -1;
+            int j = arrayOfValues.Length - 1;
             while (i < arrayOfValues.Length)
             {
                 if (arrayOfValues[i] == target) return true;
@@ -37,6 +37,26 @@ namespace FindingTargetValueInSortedArray
                 if (arrayOfValues[j] == target) return true;
                 else j--;
                 if (i == j) return false;
+            }
+            return false;
+        }
+
+        /// <summary>
+        /// Checks the array for two values that sum to a specified target value
+        /// There is no optimization in this method O=n^2
+        /// </summary>
+        /// <param name="target"></param>
+        /// <param name="arrayOfValues"></param>
+        /// <returns></returns>
+        public bool FindTargetSumInArray(int target, int[] arrayOfValues)
+        {
+            int sum = 0;
+            for (int i = 0; i < arrayOfValues.Length; i++)
+            {
+                for (int j = 0; j < arrayOfValues.Length; j++)
+                {
+                    if (arrayOfValues[i] + arrayOfValues[j] == 10) return true;
+                }
             }
             return false;
         }
