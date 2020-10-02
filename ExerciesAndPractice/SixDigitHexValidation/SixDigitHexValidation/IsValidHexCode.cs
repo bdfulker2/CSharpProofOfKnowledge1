@@ -12,7 +12,7 @@ namespace SixDigitHexValidation
     /// </summary>
     public class IsValidHexCode
     {
-        readonly Regex defaultRegex = new Regex(@"^[a-fA-F0-9]+$");
+        private readonly Regex defaultRegex = new Regex(@"^[a-fA-F0-9]+$");
         /// <summary>
         /// Validates that we have six digit hex code base on set condition 
         /// </summary>
