@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text.RegularExpressions;
 
 namespace SixDigitHexValidation
 {
@@ -11,9 +12,17 @@ namespace SixDigitHexValidation
     /// </summary>
     public class IsValidHexCode
     {
+        Regex defaultRegex = new Regex(@"^[a-fA-F0-9]+$");
+        /// <summary>
+        /// Validates that we have six
+        /// </summary>
+        /// <param name="hexValue">is a 7 digit string with example #45EFEF letter are [a-fA-F]</param>
+        /// <returns>boolean value of weather this is HexCode based on definition</returns>
         public bool ValidateSixDigitHexCode(string hexValue)
         {
-            return false;
+            if (!hexValue.StartsWith("#")) return false;
+            string hexTemp = hexValue.TrimStart('#');
+            return defaultRegex.IsMatch(hexTemp) && hexValue.Length == 7;
         }
     }
 }
