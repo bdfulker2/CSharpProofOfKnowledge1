@@ -23,11 +23,11 @@ namespace SixDigitHexValidationTests
         [TestCase("#ZCCZCC", ExpectedResult = false, Description = "Not acceptable alphabetic characters.")]
         [TestCase("#Z88Z99", ExpectedResult = false, Description = "Not acceptable alphabetic characters.")]
         [TestCase("#Z88!99", ExpectedResult = false, Description = "Unacceptable character.")]
-        public void IsValidHexCodeTest(string hexCode)
+        public bool ValidateSixDigitHexCodeTest(string hexCode)
         {
             IsValidHexCode sixDigHexValidation = new IsValidHexCode();
             Console.WriteLine($"Input : {hexCode}");
-            return sixDigHexValidation.IsValidHexCode(hexCode);
+            return sixDigHexValidation.ValidateSixDigitHexCode(hexCode);
         }
     }
 }
