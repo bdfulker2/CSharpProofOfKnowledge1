@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SixDigitHexValidation", "SixDigitHexValidation\SixDigitHexValidation.csproj", "{CAB14F1F-CC60-4477-A28E-AF2A3C8801F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SixDigitHexValidationTests", "SixDigitHexValidationTests\SixDigitHexValidationTests.csproj", "{D299853E-CC66-4C66-8F12-7DF79B63DAFA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CAB14F1F-CC60-4477-A28E-AF2A3C8801F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAB14F1F-CC60-4477-A28E-AF2A3C8801F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAB14F1F-CC60-4477-A28E-AF2A3C8801F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAB14F1F-CC60-4477-A28E-AF2A3C8801F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D299853E-CC66-4C66-8F12-7DF79B63DAFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D299853E-CC66-4C66-8F12-7DF79B63DAFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D299853E-CC66-4C66-8F12-7DF79B63DAFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D299853E-CC66-4C66-8F12-7DF79B63DAFA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9E277464-5FD5-4873-AFC3-D2507A2E8D00}
+	EndGlobalSection
+EndGlobal
