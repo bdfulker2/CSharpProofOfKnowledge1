@@ -55,7 +55,23 @@ namespace FindingTargetValueInSortedArray
             {
                 for (int j = 0; j < arrayOfValues.Length; j++)
                 {
-                    if (arrayOfValues[i] + arrayOfValues[j] == 10) return true;
+                    if (arrayOfValues[i] + arrayOfValues[j] == target) return true;
+                }
+            }
+            return false;
+        }
+         
+        public bool OptimizedFindTargetSumInArray(int target, int[] arrayOfValues)
+        {
+            if (arrayOfValues != null) 
+            {
+                int i = 0, j = arrayOfValues.Length - 1;
+                while(i <= arrayOfValues.Length / 2 +1)
+                {
+                    if (arrayOfValues[i] + arrayOfValues[j] < target) i++;
+                    if (arrayOfValues[i] + arrayOfValues[j] > target) j--;
+                    if (arrayOfValues[i] + arrayOfValues[j] == target) return true;
+                    if (i == j) return false;
                 }
             }
             return false;
