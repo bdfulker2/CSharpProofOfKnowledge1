@@ -12,12 +12,12 @@ namespace SixDigitHexValidation
     /// </summary>
     public class IsValidHexCode
     {
-        Regex defaultRegex = new Regex(@"^[a-fA-F0-9]+$");
+        readonly Regex defaultRegex = new Regex(@"^[a-fA-F0-9]+$");
         /// <summary>
-        /// Validates that we have six
+        /// Validates that we have six digit hex code base on set condition 
         /// </summary>
         /// <param name="hexValue">is a 7 digit string with example #45EFEF letter are [a-fA-F]</param>
-        /// <returns>boolean value of weather this is HexCode based on definition</returns>
+        /// <returns>boolean value of whether paramater is HexCode based on definition</returns>
         public bool ValidateSixDigitHexCode(string hexValue)
         {
             if (!hexValue.StartsWith("#")) return false;
