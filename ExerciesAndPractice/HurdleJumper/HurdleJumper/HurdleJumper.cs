@@ -6,7 +6,12 @@ namespace HurdleJumpers
     {
         public bool HurdleJump(int[] hurdleHeights, int jumpersJumpHeight)
         {
-            return false;
+            if (hurdleHeights.Length == 0) return true;
+            for(int i = 0; i < hurdleHeights.Length; i++)
+            {
+                if (hurdleHeights[i] > jumpersJumpHeight) return false;
+            }
+            return true;
         }
     }
 }
