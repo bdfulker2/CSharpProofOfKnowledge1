@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace HurdleJumper
+namespace HurdleJumpers
 {
     public class HurdleJumper
     {
