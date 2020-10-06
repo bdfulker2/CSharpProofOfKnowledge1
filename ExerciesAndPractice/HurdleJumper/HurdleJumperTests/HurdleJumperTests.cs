@@ -1,11 +1,12 @@
 using System;
-using Xunit;
+using NUnit.Framework;
 
 namespace HurdleJumperTests
 {
-    public class UnitTest1
+    [TestFixture]
+    public class HurdleJumperTests
     {
-        [Fact]
+        [Test]
         public void Test1()
         {
 
