@@ -7,9 +7,9 @@ namespace HurdleJumperTests
     public class HurdleJumperTests
     {
         [Test]
-        public void Test1()
+        public bool HurdleJumpTest(int[] hurdleHeights, int jumpersJumpHeight) 
         {
-
+           
         }
     }
 }
