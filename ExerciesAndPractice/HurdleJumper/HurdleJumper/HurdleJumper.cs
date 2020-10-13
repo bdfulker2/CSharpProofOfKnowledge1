@@ -21,5 +21,12 @@ namespace HurdleJumpers
             int tallestHurdle = hurdleHeights.Max();
             return tallestHurdle <= jumpersJumpHeight;
         }
+  
+        public bool HurdleJumpUsingLinqWhere(int[] hurdleHeights, int jumpersJumpHeight)
+        {
+            if (hurdleHeights.Length == 0) return true;
+            var tallestHurdle = hurdleHeights.First(n => n > jumpersJumpHeight);
+            return tallestHurdle <= jumpersJumpHeight;
+        }
     }
 }
